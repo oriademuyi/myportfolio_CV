@@ -16,96 +16,108 @@ class _homePageState extends State<homePage> {
     return Scaffold(
       backgroundColor: colorabackgrout,
       // appBar: AppBar(),
-      body: Column(
-        children: [
-          SizedBox(
-            height: 50,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ClipOval(
-                child: Image.asset(
-                  'assets/muyiwa1.jpeg',
-                  width: 200,
-                  height: 200,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            "Hello, I am",
-            style: TextStyle(
-                color: coloraccent, fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            "Olarewaju Muyiwa Olamide",
-            style: TextStyle(
-                color: colorwhite, fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          Text(
-            "Mobie app Developer",
-            style: TextStyle(color: colorwhite),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 25,
+      body: ListView(children: [
+        Column(
+          children: [
+            SizedBox(
+              height: 50,
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.facebook, // Example: Displaying a star icon
-                  size: 25.0,
-                  color: colorwhite,
-                ),
-                Icon(
-                  FontAwesomeIcons.instagram,
-                  size: 25.0,
-                  color: colorwhite,
-                ),
-                Icon(
-                  FontAwesomeIcons.twitter,
-                  size: 25.0,
-                  color: colorwhite,
-                ),
-                Icon(
-                  FontAwesomeIcons.whatsapp,
-                  size: 25.0,
-                  color: colorwhite,
-                ),
-                Icon(
-                  FontAwesomeIcons.telegram,
-                  size: 25.0,
-                  color: colorwhite,
-                ),
-                Icon(
-                  FontAwesomeIcons.github,
-                  size: 25.0,
-                  color: colorwhite,
+                ClipOval(
+                  child: Image.asset(
+                    'assets/muyiwa1.jpeg',
+                    width: 200,
+                    height: 200,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ],
             ),
-          ),
-          Divider(
-            thickness: 0.3,
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          quickOption()
-        ],
-      ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Hello, I am",
+              style: TextStyle(
+                  color: coloraccent,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "Olarewaju Muyiwa Olamide",
+              style: TextStyle(
+                  color: colorwhite, fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Text(
+              "Mobie app Developer",
+              style: TextStyle(color: colorwhite),
+            ),
+            Text(
+              "08133691873",
+              style: TextStyle(color: colorwhite),
+            ),
+            Text(
+              "olarewajmuyiwao@gmail.com",
+              style: TextStyle(color: colorwhite),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 25,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(
+                    Icons.facebook, // Example: Displaying a star icon
+                    size: 25.0,
+                    color: colorwhite,
+                  ),
+                  Icon(
+                    FontAwesomeIcons.instagram,
+                    size: 25.0,
+                    color: colorwhite,
+                  ),
+                  Icon(
+                    FontAwesomeIcons.twitter,
+                    size: 25.0,
+                    color: colorwhite,
+                  ),
+                  Icon(
+                    FontAwesomeIcons.whatsapp,
+                    size: 25.0,
+                    color: colorwhite,
+                  ),
+                  Icon(
+                    FontAwesomeIcons.telegram,
+                    size: 25.0,
+                    color: colorwhite,
+                  ),
+                  Icon(
+                    FontAwesomeIcons.github,
+                    size: 25.0,
+                    color: colorwhite,
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              thickness: 0.3,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            quickOption()
+          ],
+        ),
+      ]),
     );
   }
 }
